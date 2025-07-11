@@ -51,4 +51,33 @@ Install Dependencies
 
 Configure Environment Variables
 
-Start the Server
+Setup database
+Execute below queries to create table in Mysql
+"
+CREATE TABLE users (
+  user_id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  salt VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE categories (
+  cid INT AUTO_INCREMENT PRIMARY KEY,
+  category_name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE projects (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  user_id INT,
+  cid INT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(user_id),
+  FOREIGN KEY (cid) REFERENCES categories(cid)
+);
+"
+
+Start the Server 
+
+
+
