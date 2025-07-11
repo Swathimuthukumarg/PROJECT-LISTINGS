@@ -7,20 +7,20 @@ This is a full-stack project built for the task. It demonstrates user login with
 
 ---
 
-## 📌 Features
+## Features
 
-- ✅ User Login with salted MD5 password hashing
-- ✅ Automatic registration if user not found
-- ✅ Session-based authentication
-- ✅ Project table joined with `users` and `categories`
-- ✅ AJAX-based pagination (2 rows per page)
-- ✅ jQuery-powered sorting with options:
+- User Login with salted MD5 password hashing
+- Automatic registration if user not found
+- Session-based authentication
+- Project table joined with `users` and `categories`
+- AJAX-based pagination (2 rows per page)
+- jQuery-powered sorting with options:
   - Recent Projects
   - Category Name ASC
   - Username ASC
   - Project Title ASC
-- ✅ Responsive and styled HTML UI for login & dashboard
-- ✅ API testing via Postman collection
+-  Responsive and styled HTML UI for login & dashboard
+-  API testing via Postman collection
 
 ---
 
